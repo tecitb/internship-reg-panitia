@@ -155,7 +155,7 @@ $app->post('/register/do', function ($request, $response, $args) {
     $lunas = 1;
 
     $verified = md5(uniqid(rand(),true));
-    $isAdmin = ($jwt['role'] == 1 || $jwt['role'] == 2) ? 1 : 0;
+    $isAdmin = ($jwt['team'] == 1 || $jwt['team'] == 2) ? 1 : 0;
 
     $sql = "INSERT INTO `users`
           (`name`, `email`, `password`, `nim`, `created_at`, `lunas`, `verified`, `isAdmin`, `interests`, `nickname`, `about_me`, `line_id`, `instagram`, `mobile`, `tec_regno`, `address`, `role`)
