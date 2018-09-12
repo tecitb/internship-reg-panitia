@@ -32,7 +32,7 @@ require_once __DIR__ . '/routes.php';
  * Home view
  */
 $app->get('/', function ($request, $response, $args) {
-    return $this->withRedirect(BASE_URL."/consent");
+    return $response->withRedirect(BASE_URL."/consent");
 });
 
 $app->run();
