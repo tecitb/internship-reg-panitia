@@ -34,7 +34,7 @@ $app->post('/reset', function ($request, $response, $args) {
 
     setcookie($settings['jwt']['cookie_name'], "", 1, '/');
 
-    return $response->withRedirect(BASE_URL . '/consent');
+    return $response->withRedirect(INA_BASE_URL.'/cas/logout?service=' . rawurlencode(BASE_URL . '/consent'));
 });
 
 $app->get('/ina/propagate', function (Request $request, Response $response, array $args) {
