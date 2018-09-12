@@ -7,12 +7,12 @@ $interests = array("Tech|tech", "F&B|fnb", "Fashion|fashion", "Arts & Design|art
   <div class="mb-5"></div>
 
   <div class="container">
-      <form method="post" action="<?=BASE_URL?>/reset">
+      <form method="post" id="resetform" action="<?=BASE_URL?>/reset">
           <div class="card">
               <div class="card-body">
                   <b>Kamu mendaftar sebagai:</b>
                   <h4><?=@$nama?> &nbsp; <small>(<?=@$ou?>)</small></h4>
-                  <button style="margin-top: 8px;" type="submit" class="btn btn-secondary btn-sm">Ini bukan saya :(</button>
+                  <button style="margin-top: 8px;" type="submit" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-left"></i> &nbsp; Login Kembali</button>
               </div>
           </div>
       </form>
@@ -259,7 +259,7 @@ $interests = array("Tech|tech", "F&B|fnb", "Fashion|fashion", "Arts & Design|art
 
           <div id="regisButtonLoc" class="form-group ">
             <div class="input-group">
-              <button type="submit" id="regisButton" class="rounded form-control w-100 btn btn-primary" style="white-space: normal;">Daftar! (mana saya tahu saya kan panitia)</button>
+              <button type="submit" id="regisButton" class="rounded form-control w-100 btn btn-primary" style="white-space: normal;">Daftar &nbsp; <i class="fa fa-arrow-right"></i></button>
               <div class="invalid-feedback">
                 Ada data yang tidak valid
               </div>

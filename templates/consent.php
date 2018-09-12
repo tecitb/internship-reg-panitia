@@ -1,6 +1,25 @@
 <div class="container" style="margin-top: 32px;">
     <div class="row">
         <div class="col-md-6 offset-md-3">
+            <?php if(!empty($error)) { ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php
+                    switch ($error) {
+                        case "INA_LOGIN_FAILED":
+                            echo "Login INA gagal, silakan coba di lain waktu.";
+                            break;
+                        case "NOT_IN_REGISTRY":
+                            echo "Pengguna tidak terdaftar sebagai panitia TEC Internship 2018";
+                            break;
+                        case "USER_REGISTERED":
+                            echo "Panitia sudah terdaftar";
+                            break;
+                        default:
+                            echo "Unknown error";
+                    }
+                    ?>
+                </div>
+            <?php } ?>
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title mt-3">Ketentuan</h3>
