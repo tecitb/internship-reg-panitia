@@ -12,5 +12,5 @@ before_script: composer install
 
 script:
   - docker build -t tec/internship-reg-panitia .
-  - docker tag tec/intern-presence node2.didithilmy.com/tec/internship-reg-panitia
+  - docker tag tec/internship-reg-panitia node2.didithilmy.com/tec/internship-reg-panitia
   - docker push node2.didithilmy.com/tec/internship-reg-panitia
