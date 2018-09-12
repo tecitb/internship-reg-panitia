@@ -1,0 +1,220 @@
+#promo-daftar{
+  background: url("../img/tec-abs-bg.svg") no-repeat center center, #1A90BB !important;
+  background-size: cover !important;
+  color: white;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+#promo-daftar h1, #promo-daftar p {
+  padding: 10px;
+  background: #00000055;
+  width: auto;
+  display: table;
+  border-radius: 5px;
+}
+
+#navbar-landing {
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  z-index: 9999;
+  background: #0083B3;
+}
+
+#hero{
+  height: 180vmin;
+  max-height: 600px;
+}
+
+#hero .carousel-inner .carousel-item{
+  height: 180vmin;
+  max-height: 600px;
+  width:100%;
+}
+
+
+#hero h1, #hero p {
+  padding: 10px;
+  background: #00000055;
+  width: auto;
+  display: table;
+  border-radius: 5px;
+}
+
+#hero h1 {
+  text-transform: uppercase;
+}
+
+#hero .carousel-caption {
+  max-width: 600px;
+}
+
+#hero .carousel-item {
+  background-color: #003F7E !important;
+}
+
+#hero #carousel-item-1 {
+  background: url("../img/tec-abs-bg.svg") no-repeat center center, #1A90BB !important;
+  background-size: cover !important;
+}
+
+#hero #carousel-item-2 {
+  /*background: url("../img/tec-landing-slider2.png") no-repeat bottom right 50px, url("../img/tec-abs-bg.svg") no-repeat center center, #1A90BB !important;
+  background-size: auto 90%, cover !important;*/
+  background: url("../img/tec-carousel-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#hero #carousel-item-3 {
+  background: url("../img/tec-landing-slider3.png") no-repeat bottom right 50px, url("../img/tec-abs-bg.svg") no-repeat center center, #1A90BB !important;
+  background-size: auto 90%, cover !important;
+}
+
+.section-heading h1 {
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  margin-bottom: 48px;
+  font-size: 30pt;
+}
+.section-heading h1:before{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 5px;
+  bottom: -5px;
+  left: 20%;
+  border-bottom: 5px solid white;
+}
+.section-heading.black h1:before{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 5px;
+  bottom: -5px;
+  left: 20%;
+  border-bottom: 5px solid black;
+}
+
+#landing-segment-1 {
+  background: #0076A1;
+  color: white;
+}
+
+#landing-segment-1-left {
+  background: url("../img/tec-landing-segment-2.png") no-repeat bottom center, #00000044;
+  background-size: auto 95%;
+  color: white;
+  height: 400px;
+}
+
+#landing-segment-1-right {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow-x: hidden;
+  color: white;
+}
+
+#landing-segment-2 {
+  padding: 32px;
+  background: #00678D;
+  color: white;
+}
+
+#landing-player {
+  width: 100%;
+  max-width: 600px;
+  margin: 16px;
+  margin-top: 32px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 6px;
+}
+
+#reg-segment-1-left {
+  background: url("../img/tec-reg-jb-pe.png") no-repeat bottom center;
+  background-size: auto 90%;
+  color: white;
+  min-height: 300px;
+}
+
+#reg-segment-1-right {
+  padding: 32px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  overflow-x: hidden;
+  color: white;
+}
+
+#testimonials-landing-section, #business-landing-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  color: #000000;
+}
+
+#testimonials-landing-section {
+  background: #f0f0f0;
+}
+
+#business-landing-section {
+  background: #ffffff;
+}
+
+.testimonial {
+  position: relative;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial .quote {
+  background: url('../img/quote-semitrn.png') no-repeat 24px 16px, #0083B3;
+  background-size: 36px auto;
+  color: #ffffff;
+  padding: 24px;
+  padding-bottom: 36px;
+  padding-left: 88px;
+  font-style: italic;
+  flex: auto;
+}
+
+.testimonial .name {
+  padding-right: 16px;
+  padding-left: 88px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #888888;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.testimonial img.image {
+  height: 56px;
+  border-radius: 100%;
+  border: 3px solid white;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+#business-landing-section img {
+  height: 90px;
+  margin: 8px;
+}
+
+#ohu-landing-section {
+  padding: 32px;
+  color: #FFFFFF;
+  background: #0083B3;
+}

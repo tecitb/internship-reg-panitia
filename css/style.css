@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'SourceSansProRg';
+  src:  url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SourceSansProBold';
+  src:  url('../fonts/SourceSansPro-Bold.otf') format('opentype');
+}
+
+body {
+  overflow-x: hidden;
+  font-family: SourceSansProRg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: SourceSansProBold;
+}
+
+#loginMenuDrop, #userMenuDrop{
+  left:-150px;
+  min-width: 250px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  position: relative;
+}
+
+.loader-big{
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 120px;
+}
+
+.loader-small{
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.dropdown .dropdown-menu.mobile-open {
+  transition: all 0.3s;
+  display:block;
+
+}
+
+/* https://www.tilcode.com/css-hide-spinners-updown-arrows-on-inputs-with-typenumber-using-a-class/ */
+.no-spinners {
+  -moz-appearance:textfield;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width:768px){
+  .dropdown .dropdown-menu.mobile-open {
+    visibility: hidden;
+    opacity:0;
+
+  }
+  .dropdown .dropdown-menu.mobile-open.show {
+    visibility: visible;
+    opacity:1;
+  }
+}
+
+.searchable-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchable-container label.btn-default.active{background-color:#388e3c;color:#FFF}
+.searchable-container label.btn-default{border:1px solid #e0e0e0;margin:5px;}
+.searchable-container label .bizcontent{flex: auto}
+.searchable-container .btn span.glyphicon{
+  opacity: 0;
+}
+.searchable-container .btn.active span.glyphicon {
+  opacity: 1;
+}
+.searchable-container input {
+  display: none;
+}
+
+.logged-in {
+  display: none;
+}
+
+.bg-tec {
+  background: #0083B3;
+}

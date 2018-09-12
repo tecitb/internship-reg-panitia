@@ -1,0 +1,31 @@
+.list-group{
+  max-height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling:touch;
+}
+
+.table-borderless td{
+  border:none;
+  padding-bottom: 0px;
+}
+
+.table-separator td{
+  border-top: 1px solid #dee2e6;
+}
+
+.dropdown .dropdown-menu{
+  opacity:0;
+  display: block;
+  visibility: hidden;
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.dropdown .dropdown-menu.show{
+  visibility: visible;
+  opacity:1;
+}
+
+#paginationInput{
+  width:50px;
+}

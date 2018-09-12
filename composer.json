@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "^3.10",
+        "slim/php-view": "^2.2",
+        "vlucas/phpdotenv": "^2.5",
+        "monolog/monolog": "^1.23",
+        "tuupola/slim-jwt-auth": "^3.1"
+    }
+}
